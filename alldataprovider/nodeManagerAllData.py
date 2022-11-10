@@ -33,7 +33,7 @@ class NodeManagerAllData:
         self.nodes = []
 
     def create_static_nodes(self):
-        self.create_nodes("static/", False)
+        self.create_nodes("Hugo/", False)
 
     def create_dynamic_nodes(self, ):
         self.create_nodes("dynamic/", True)

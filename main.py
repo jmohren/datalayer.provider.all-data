@@ -39,7 +39,7 @@ def main():
     datalayer_system.start(False)
 
     # Try SSL port 8443
-    provider, connection_string = get_provider(datalayer_system)
+    provider, connection_string = get_provider(datalayer_system, ip="10.0.2.2", ssl_port=8443)
     if provider is None:
         print("ERROR Connecting", connection_string, "failed.")
         datalayer_system.stop(False)
